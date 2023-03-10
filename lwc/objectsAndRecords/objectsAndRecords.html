@@ -1,0 +1,23 @@
+<template>
+    <lightning-layout-item>
+
+        <lightning-combobox name="ObjectList" label="Select Object" onchange={HandleFields} value={selectedObject}
+            options={objectList} placeholder="Object List">Object</lightning-combobox>
+    </lightning-layout-item>
+    <div>
+        <div>
+            <c-field-Names onchangeinfields={Handlecheckbox} value={SelectedFieldList}></c-field-Names>
+        </div>
+        <div >
+            <c-records></c-records>
+        </div>
+    </div>  
+     
+    
+    
+
+      
+        
+        
+    
+</template>
